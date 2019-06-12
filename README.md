@@ -1,2 +1,32 @@
-# sshkeys
-My Public SSH Keys
+# My public SSH Keys
+This repository contains the various public SSH keys I use for server access.
+
+I have three different key sets:
+* Home : Used from my home (fixed base) machines
+* Portable : Used from portable (laptop) machines
+* Work : Used from my work systems
+
+For each key set, I maintain ED25519, RSA (4096 bit) and ECDSA (NIST/P1 521 bit) keys.
+
+When granting server access for me, ED25519 keys are preferred provided your server supports them (Typically openssh 6.5+). RSA keys are second choice, and ECDSA would only be used in cases where no other key type is acceptable to the server.
+
+## Home keys
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBTW4/Ouoh8pT+jbX70y8kw41B9kXA8sVieQZouWPGgG chris@chrisjb.com v2 home 12-jun-2019
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDCVLXrHiqlGKnmiB8E2p7eIN7PrBqjsYQKrxGdIaLvtUsPssXGKvzwlvYGDYEUqxoFgpshh0cjUxcMe0hslUf91P6NytskDxe8IFIQvtJtGbp5OtZqb9IMTzOS7NWhscInyd9RMPFZPsM3/41GKkb22qQ7FDBpgcZEeUsI1q9QFlg6L+lWWLepQLYN0hFDgetsBs/cjpvufny8DHyQ7xve/pY4SLLWWK5gpuIPwZNF9/pAEINRo3DnrTEBVaDxn4vVNmdqbaylBzBwB3wI/nJTLSEmBnyvwwQ9Rl+Wllrql2YK7tptXd33JArNOclhxDHvEY343IUwFAPT6hFjec6R3+QRAR5C+ixCgXTyU4NatDQSoISrNT8qh5O3gizn9+4LaxUpBslL03y8sw15hOVUAIU3oSrv+iPE7bOuqSPUtBT6o2een0cHhBnR5AzV/Ye0YRfZHf2c6gize93xUNIYCCe0CC1lhkHMP8CQ0EyzMZA4hAjcYXZxdVitRWv+2qPUKZMI49BhbpAIVZRkrpenJtfw5rD6A2kIDa5RsPjc3kBc2MIKRQdztO0ZrQeKfPJ0tkhOx+7Cw0yuZYBbb0OX4ROXgbG3W+8rcGqnbEdF3SxKiWAE1bQKVEqIK6+d+hSxemhHdphMcoxsfk64dh0zSjt7gbRGT/gt+ibBuPB3aQ== chris@chrisjb.com v2 home 12-jun-2019
+ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAALgXXmx1alzM4Zw7wQPkvk9Sayos5BKMA793hvqpvaGTlQJyuqGOaYtKeQp65Qf0YDxIwLGiX4mr38J0edbnbJPgHH7nkFiVVynDE/F7L7FqU8v36Q5Ib1X/v1uaj5bb5uzY1DA2ZqdbaFHoodC7q7mUGwXNwplA/vO4MM1rtzedOE9g== chris@chrisjb.com v2 home 12-jun-2019
+```
+
+## Portable keys
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID5ynGKHvSbG8NAYyaUFB0KI4fuchhiNXDPoLJ48A2ou chris@chrisjb.com v2 portable 12-jun-2019
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDJlMPAAlTdoJBw49U+biz2tx15fJ9B2nz6fBa0Zr5s+YYphS46GwcOXdgwEU+dCSg+/gup1cM5LoknHRfdEDN+ptdij6yMa5a9VBvJdHHozldFn6/2fOBWJ9kRNYlZ4obKpBELKr1SGStF1vMc0hKOjQSHTT7kDYTwbEfdzP0ceYtiyKQLFq3ZBqqUs0mCVrlYPspn9m8xCQbCSZVRgLNo24Hw5G2EW68eP+jKj2PhD7gLcq5taPd6xFJQIjX0uvlLtrktcUlElq/GYyvZUXVxKiCABgTsbxAoGf7ZCnoO513Ur6Tt5SJwCkWeTX9sA2GHXjntV365GW5PmbZKpS3I/DbmW0cpYPne+oftaIejhP0vGnt0Deqqud0p8X64s1RzfJzmoMOa8UopDYDrS8GLl728y0/CGv6Xf8oleI5aHIXPL+aiTcEFTnz38IiHxE+SnwuNhbAgBfuU8HtUsx//8HxlrGPvuIdS9hIX7bmvYWcSuxtbEQFBHIGd3WGwQtARLHfhp+JY0kRbnSXGv1lHaldUeq4UrDJlUe9qKLkxlBdKK8ndoF+jWuK9x07zFVcC2oUNFpetdaGaE6xWlW9qH+8TkwOPMYD/izV2E/+kzpMY+6wYyr221MdLN+8JKlSn5QOj6fjJgS5cvOu6GHsBbVj2fBqLDKfF5Pw+SAzWrQ== chris@chrisjb.com v2 portable 12-jun-2019
+ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAHIFWcMBil2FtlvScmyze+K18CD2lAmgfmm5OPCBysfodAHpsl2xHl2W6j6muonicXeY25VwQ3OKaZirG8pWfZNvwBIDSo1s1xqmlNsOCq9OkE9Q//aW6hGwHWfXz3wrRwoJy9gzVyIPqPMwqh1hPnETqHnVmcxVa9R3GuNTmOTQ2ahIA== chris@chrisjb.com v2 portable 12-jun-2019
+```
+
+## Work keys
+```
+ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAA9IAhH3NYpe4xva996eMwvTIriIkbvYoGXE1JC2ZlLGTfIZCPzwqlDiyfiqVEMEBC8piGpNTNUmARVMZ4itWgo+QCotJrbZ3hOwumF3HTYVT4wjk7oVmoO6/8nd4IxKM5ilql8nGQg66i4z1wpw8VtGJ5W8LpA83f5gPNJyhrSB20A+Q== cbearman work v2 12-jun-2019
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKOyS4/0WNtA6fHUSdxrmilR7qfUqpvcTtba3OE4+9tk cbearman work v2 12-jun-2019
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDXE/KKxU66rm5eZTh21vW4VDLCrKidpVC8ht0wPfefffBJ0BdK1sg+eHGVLWqtinBpAZyU7v3k4TTTRRuMEZ2JgOBR8DavyLIfeeYj85aYBclkFwrqY3FyPumr/3yhqqvwuvnacIBcGMoSB8EMspJel2MU0j83T+Ln0t6eKlvwgsqM+jlIEZ4Si5KmaVRE0D393H+tr0itL6lR/e3bjNNw38I0Pkgb3awrDVDoQUm1d/6MCQxT4GiYFH8/GTO7IZ980r3cH/QE+zIDHVIK+AQ4jHF1K/ul8R5KcFl5CUU8KWLFSI9nxb9dn99QlNMx9c79WSQG6itfl5sl9sj1nT0NBJLxzIaiUkSGEjH2LaDfsdXlbQAfjGsWLwX5w/IZwxZDj/hBFbDT7XGSNaxVjj7q5NN5JljjXeytECR+1EMPmHT4YjijihZvOUY9NFfDnWKl/NNxwj3lwOkoBoZKVvn6uIKcD3VnHkWR+JOPnAXopK+NO3G1/+R3j7z9qJ1PDhUsA7JImU5jvoe1rUXVph7IUm3LVG/zSZvW6fJtfbKP2yJ+2181/hqKplugRWjZNQwR4YKV4S2v6lGE9bMAN/LUZrtnb0lgXH1+EYd6gcBvCxXvZAjTYzOWykgL7n6SNgxUV3sbSgMqfFqt5G9dCx5eWBoB/UtIXE1oNnOuomu8cw== cbearman work v2 12-jun-2019
+```
